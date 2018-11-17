@@ -5,22 +5,26 @@
       "name": "client",
       "image": "bleibig/multi-client",
       "hostname": "client",
+      "memoryReservation": 56,
       "essential": false
     },
     {
       "name": "server",
       "image": "bleibig/multi-server",
       "hostname": "api",
+      "memoryReservation": 56,
       "essential": false
     },
     {
       "name": "worker",
       "image": "bleibig/multi-server",
+      "memoryReservation": 56,
       "essential": false
     },
     {
       "name": "nginx",
       "image": "bleibig/multi-nginx",
+      "memoryReservation": 56,
       "essential": true,
       "portMappings": [
         {
