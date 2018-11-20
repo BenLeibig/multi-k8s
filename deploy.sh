@@ -9,6 +9,6 @@ docker push bleibig/multi-worker:latest
 docker push bleibig/multi-server:$GIT_SHA
 docker push bleibig/multi-worker:$GIT_SHA
 kubectl apply -f ./k8s
-kubectl set image deployments/server-deployment bleibig/multi-server:$GIT_SHA
-kubectl set image deployments/client-deployment bleibig/multi-client:$GIT_SHA
-kubectl set image deployments/worker-deployment bleibig/multi-worker:$GIT_SHA
+kubectl set image deployments/server-deployment server=bleibig/multi-server:$GIT_SHA
+kubectl set image deployments/client-deployment client=bleibig/multi-client:$GIT_SHA
+kubectl set image deployments/worker-deployment worker=bleibig/multi-worker:$GIT_SHA
