@@ -1,7 +1,7 @@
 sudo: require
 services:
   - docker
-ENV:
+env:
   global:
     - GIT_SHA=$(git rev-parse head)
     - CLOUDSDK_CORE_DISABLE_PROMPTS=1
