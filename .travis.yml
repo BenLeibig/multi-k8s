@@ -15,7 +15,7 @@ before_install:
   - gcloud config set compute/zone europe-west4-a
   - gcloud container clusters get-credentials standard-cluster-1
   - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
-  - docker build -t bleibig/react-test -f ./client/Dockerfile.dev ./cleint
+  - docker build -t bleibig/react-test -f ./client/Dockerfile.dev ./client
 
 scirpt:
   - docker run bleibig/react-test npm run test -- --coverage
