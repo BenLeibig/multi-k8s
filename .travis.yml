@@ -13,7 +13,7 @@ before_install:
   - gcloud auth activate-service-account --key-file service-account.json
   - gcloud config set project multi-k8s-223013
   - gcloud config set compute/zone europe-west4-a
-  - gcloud config set cluster standard-cluster-1
+  - gcloud container clusters get-credentials standard-cluster-1
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME"
   - docker build -t bleibig/react-test -f ./client/Dockerfile.dev ./cleint
 
