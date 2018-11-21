@@ -14,7 +14,7 @@ spec:
   acme:
       config:
         - http01:
-          ingressClass: nginx
+            ingressClass: nginx
         domains:
           - k8s.vlkberlin.net
           - www.k8s.vlkberlin.net
