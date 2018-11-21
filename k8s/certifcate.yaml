@@ -10,11 +10,9 @@ spec:
   commonName: k8s.vlkberlin.net
   dnsNames:
     - k8s.vlkberlin.net
-    - www.k8s.vlkberlin.net
   acme:
       config:
         - http01:
             ingressClass: nginx
           domains:
             - k8s.vlkberlin.net
-            - www.k8s.vlkberlin.net
