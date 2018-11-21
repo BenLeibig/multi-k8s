@@ -15,7 +15,6 @@ spec:
       config:
         - http01:
             ingressClass: nginx
-        domains:
-          - k8s.vlkberlin.net
-          - www.k8s.vlkberlin.net
-          - www.k8s.vlkberlin.net
+          domains:
+            - k8s.vlkberlin.net
+            - www.k8s.vlkberlin.net
