@@ -18,3 +18,4 @@ spec:
         domains:
           - k8s.vlkberlin.net
           - www.k8s.vlkberlin.net
+          - www.k8s.vlkberlin.net
